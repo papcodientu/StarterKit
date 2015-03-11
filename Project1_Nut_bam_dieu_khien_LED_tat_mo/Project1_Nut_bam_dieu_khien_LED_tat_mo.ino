@@ -21,7 +21,7 @@ Website: http://papcodientu.com/
 const int nutBam = 2;    // nut bam noi vao pin 2 cua Arduino
 const int denLED = 13;  // den LED noi vao pin 13 cua Arduino
 
-int thoigiantatdenLED = 10000;
+int trangthaidenLED = LOW;  // trang thai den LED hien tai
 int trangthaiNutBam;    // trang thai nut bam hien tai
 int trangthainutbamTruoc = HIGH;   // trang thai nut bam truoc do
 
@@ -34,7 +34,7 @@ void setup() {
   pinMode(nutBam, INPUT);   // Nút bấm là thiết bị đầu vào (input)
   
   // Thiet lap trang thai ban dau led va nut bam
-  digitalWrite(denLED, LOW);
+  digitalWrite(denLED, trangthaidenLED);
 }
 
 void loop() {
@@ -55,16 +55,21 @@ void loop() {
      
       // nut bam da duoc nhan
       if (trangthaiNutBam == LOW) {
-        // bat den LED khi nut duoc nhan
-        digitalWrite(denLED, HIGH);
-        // delay 10s
-        delay(thoigiantatdenLED);
-        // tat den LED sau 10s
-        digitalWrite(denLED, LOW);
+        // thay doi trang thai den LED
+        trangthaidenLED = HIGH;
       }
     }
   }
+    
+  // xuat gia trang thai den LED
+  digitalWrite(denLED, trangthaidenLED);
+
+  // delay 5s
+  delay(5000);
+  
+  // tat den
+  trangthaidenLED = LOW:
   
   // ghi lai gia tri nut bam
-  trangthainutbamTruoc = giatriNutBam; 
+  trangthainutbamTruoc = giatriNutBam;
 }
