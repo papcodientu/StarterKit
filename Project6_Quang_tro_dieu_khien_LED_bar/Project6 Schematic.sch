@@ -2312,6 +2312,12 @@ Through-hole photocell (http://www.sparkfun.com/products/9088)&lt;br&gt;
 <part name="R3" library="SparkFun-Passives" deviceset="RESISTOR" device="0402-RES" value="220"/>
 <part name="R4" library="SparkFun-Passives" deviceset="RESISTOR" device="0402-RES" value="220"/>
 <part name="R5" library="SparkFun-Sensors" deviceset="PHOTOCELL" device="PTH"/>
+<part name="LED4" library="adafruit" deviceset="LED" device=""/>
+<part name="LED5" library="adafruit" deviceset="LED" device=""/>
+<part name="LED6" library="adafruit" deviceset="LED" device=""/>
+<part name="R6" library="SparkFun-Passives" deviceset="RESISTOR" device="0402-RES" value="220"/>
+<part name="R7" library="SparkFun-Passives" deviceset="RESISTOR" device="0402-RES" value="220"/>
+<part name="R8" library="SparkFun-Passives" deviceset="RESISTOR" device="0402-RES" value="220"/>
 </parts>
 <sheets>
 <sheet>
@@ -2322,18 +2328,24 @@ Through-hole photocell (http://www.sparkfun.com/products/9088)&lt;br&gt;
 <instance part="SUPPLY1" gate="G$1" x="76.2" y="43.18" rot="R180"/>
 <instance part="GND1" gate="1" x="81.28" y="40.64"/>
 <instance part="R1" gate="G$1" x="116.84" y="116.84" rot="R90"/>
-<instance part="R2" gate="G$1" x="50.8" y="116.84"/>
-<instance part="LED1" gate="G$1" x="38.1" y="116.84" rot="R270"/>
+<instance part="R2" gate="G$1" x="50.8" y="114.3"/>
+<instance part="LED1" gate="G$1" x="38.1" y="114.3" rot="R270"/>
 <instance part="GND2" gate="1" x="27.94" y="109.22"/>
 <instance part="GND3" gate="1" x="116.84" y="106.68"/>
 <instance part="SUPPLY2" gate="G$1" x="91.44" y="134.62"/>
 <instance part="FRAME1" gate="G$1" x="-33.02" y="-15.24"/>
 <instance part="FRAME1" gate="V" x="114.3" y="-15.24"/>
-<instance part="LED2" gate="G$1" x="38.1" y="127" rot="R270"/>
-<instance part="LED3" gate="G$1" x="38.1" y="137.16" rot="R270"/>
-<instance part="R3" gate="G$1" x="50.8" y="127"/>
-<instance part="R4" gate="G$1" x="50.8" y="137.16"/>
+<instance part="LED2" gate="G$1" x="38.1" y="121.92" rot="R270"/>
+<instance part="LED3" gate="G$1" x="38.1" y="129.54" rot="R270"/>
+<instance part="R3" gate="G$1" x="50.8" y="121.92"/>
+<instance part="R4" gate="G$1" x="50.8" y="129.54"/>
 <instance part="R5" gate="G$1" x="101.6" y="129.54"/>
+<instance part="LED4" gate="G$1" x="38.1" y="137.16" rot="R270"/>
+<instance part="LED5" gate="G$1" x="38.1" y="144.78" rot="R270"/>
+<instance part="LED6" gate="G$1" x="38.1" y="152.4" rot="R270"/>
+<instance part="R6" gate="G$1" x="50.8" y="137.16"/>
+<instance part="R7" gate="G$1" x="50.8" y="144.78"/>
+<instance part="R8" gate="G$1" x="50.8" y="152.4"/>
 </instances>
 <busses>
 </busses>
@@ -2359,17 +2371,29 @@ Through-hole photocell (http://www.sparkfun.com/products/9088)&lt;br&gt;
 </segment>
 <segment>
 <pinref part="LED1" gate="G$1" pin="C"/>
-<wire x1="33.02" y1="116.84" x2="27.94" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="114.3" x2="27.94" y2="114.3" width="0.1524" layer="91"/>
 <pinref part="GND2" gate="1" pin="GND"/>
-<wire x1="27.94" y1="116.84" x2="27.94" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="114.3" x2="27.94" y2="111.76" width="0.1524" layer="91"/>
 <pinref part="LED2" gate="G$1" pin="C"/>
-<wire x1="33.02" y1="127" x2="27.94" y2="127" width="0.1524" layer="91"/>
-<wire x1="27.94" y1="127" x2="27.94" y2="116.84" width="0.1524" layer="91"/>
-<junction x="27.94" y="116.84"/>
+<wire x1="33.02" y1="121.92" x2="27.94" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="121.92" x2="27.94" y2="114.3" width="0.1524" layer="91"/>
+<junction x="27.94" y="114.3"/>
 <pinref part="LED3" gate="G$1" pin="C"/>
-<wire x1="33.02" y1="137.16" x2="27.94" y2="137.16" width="0.1524" layer="91"/>
-<wire x1="27.94" y1="137.16" x2="27.94" y2="127" width="0.1524" layer="91"/>
-<junction x="27.94" y="127"/>
+<wire x1="33.02" y1="129.54" x2="27.94" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="129.54" x2="27.94" y2="121.92" width="0.1524" layer="91"/>
+<junction x="27.94" y="121.92"/>
+<wire x1="27.94" y1="129.54" x2="27.94" y2="137.16" width="0.1524" layer="91"/>
+<junction x="27.94" y="129.54"/>
+<pinref part="LED4" gate="G$1" pin="C"/>
+<wire x1="27.94" y1="137.16" x2="33.02" y2="137.16" width="0.1524" layer="91"/>
+<pinref part="LED5" gate="G$1" pin="C"/>
+<wire x1="33.02" y1="144.78" x2="27.94" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="144.78" x2="27.94" y2="137.16" width="0.1524" layer="91"/>
+<junction x="27.94" y="137.16"/>
+<pinref part="LED6" gate="G$1" pin="C"/>
+<wire x1="33.02" y1="152.4" x2="27.94" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="152.4" x2="27.94" y2="144.78" width="0.1524" layer="91"/>
+<junction x="27.94" y="144.78"/>
 </segment>
 <segment>
 <pinref part="R1" gate="G$1" pin="1"/>
@@ -2381,45 +2405,45 @@ Through-hole photocell (http://www.sparkfun.com/products/9088)&lt;br&gt;
 <segment>
 <pinref part="R2" gate="G$1" pin="2"/>
 <pinref part="U1" gate="G$1" pin="D13"/>
-<wire x1="55.88" y1="116.84" x2="63.5" y2="116.84" width="0.1524" layer="91"/>
-<wire x1="63.5" y1="116.84" x2="63.5" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="114.3" x2="63.5" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="114.3" x2="63.5" y2="109.22" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">
 <segment>
 <pinref part="R2" gate="G$1" pin="1"/>
 <pinref part="LED1" gate="G$1" pin="A"/>
-<wire x1="45.72" y1="116.84" x2="40.64" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="114.3" x2="40.64" y2="114.3" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$4" class="0">
 <segment>
 <pinref part="LED3" gate="G$1" pin="A"/>
 <pinref part="R4" gate="G$1" pin="1"/>
-<wire x1="40.64" y1="137.16" x2="45.72" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="129.54" x2="45.72" y2="129.54" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$5" class="0">
 <segment>
 <pinref part="LED2" gate="G$1" pin="A"/>
 <pinref part="R3" gate="G$1" pin="1"/>
-<wire x1="40.64" y1="127" x2="45.72" y2="127" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="121.92" x2="45.72" y2="121.92" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$6" class="0">
 <segment>
 <pinref part="R4" gate="G$1" pin="2"/>
-<wire x1="55.88" y1="137.16" x2="68.58" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="129.54" x2="68.58" y2="129.54" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="D11"/>
-<wire x1="68.58" y1="137.16" x2="68.58" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="129.54" x2="68.58" y2="109.22" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$7" class="0">
 <segment>
 <pinref part="R3" gate="G$1" pin="2"/>
 <pinref part="U1" gate="G$1" pin="D12"/>
-<wire x1="55.88" y1="127" x2="66.04" y2="127" width="0.1524" layer="91"/>
-<wire x1="66.04" y1="127" x2="66.04" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="121.92" x2="66.04" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="121.92" x2="66.04" y2="109.22" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="A0" class="0">
@@ -2436,6 +2460,51 @@ Through-hole photocell (http://www.sparkfun.com/products/9088)&lt;br&gt;
 <pinref part="U1" gate="G$1" pin="A0"/>
 <wire x1="88.9" y1="48.26" x2="88.9" y2="40.64" width="0.1524" layer="91"/>
 <label x="88.9" y="40.64" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$9" class="0">
+<segment>
+<pinref part="LED6" gate="G$1" pin="A"/>
+<pinref part="R8" gate="G$1" pin="1"/>
+<wire x1="40.64" y1="152.4" x2="45.72" y2="152.4" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$10" class="0">
+<segment>
+<pinref part="LED5" gate="G$1" pin="A"/>
+<pinref part="R7" gate="G$1" pin="1"/>
+<wire x1="40.64" y1="144.78" x2="45.72" y2="144.78" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$11" class="0">
+<segment>
+<pinref part="LED4" gate="G$1" pin="A"/>
+<pinref part="R6" gate="G$1" pin="1"/>
+<wire x1="40.64" y1="137.16" x2="45.72" y2="137.16" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$12" class="0">
+<segment>
+<pinref part="R8" gate="G$1" pin="2"/>
+<pinref part="U1" gate="G$1" pin="D8"/>
+<wire x1="55.88" y1="152.4" x2="76.2" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="152.4" x2="76.2" y2="109.22" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$13" class="0">
+<segment>
+<pinref part="R7" gate="G$1" pin="2"/>
+<pinref part="U1" gate="G$1" pin="D9"/>
+<wire x1="55.88" y1="144.78" x2="73.66" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="144.78" x2="73.66" y2="109.22" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$14" class="0">
+<segment>
+<pinref part="R6" gate="G$1" pin="2"/>
+<pinref part="U1" gate="G$1" pin="D10"/>
+<wire x1="55.88" y1="137.16" x2="71.12" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="137.16" x2="71.12" y2="109.22" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
