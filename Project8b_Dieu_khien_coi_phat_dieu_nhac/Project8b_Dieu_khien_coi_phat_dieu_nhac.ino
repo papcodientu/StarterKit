@@ -17,7 +17,7 @@ Website: http://papcodientu.com/
 
 #include "pitches.h"
 
-const int coi = 11;
+const int coi = 9;
 const int cambienPIR = 2;
 
 int melody[] = {
