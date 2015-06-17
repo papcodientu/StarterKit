@@ -7,7 +7,6 @@ Linh kiện:
 - Điện trở 220 Ohm, 10K Ohm
 - Quang trở
 - Còi
-- Cảm biến nhiệt độ
 - Cảm biến chuyển động
 - Arduino Uno
 
@@ -15,7 +14,6 @@ Chế đô:
 0 - Tắt hệ thống
 1 - Nhà thông minh
 2 - Báo động
-3 - Cảm biết nhiệt độ
 
 Cách lắp mạch:
 - Xem hình
@@ -23,18 +21,12 @@ Cách lắp mạch:
 Tác giả: Nhân Nguyễn
 Ngày: 13/01/2015
 Lịch sử thay đổi
+- 17/06/2015 Rev. 1.3 Removed alarm mode
 - 13/01/2015 Rev. 1.1 Upgraded
 - 04/11/2014 Rev. 1.0 Added button debounce
 - 06/09/2014 Rev. 0.1 Draft, no button debounce
 Website: http://papcodientu.com/
 */
-
-// thư viện DHT - https://github.com/RobTillaart/Arduino
-#include <dht.h>
-
-// khai báo biến DHT
-dht DHT;
-
 // Các thiết bị đầu vào
 const int nutBam = 2;    // nut bam noi vao pin 2 cua Arduino
 const int denledDo1 = 5;  // đèn LED điều khiển bởi nút bấm
@@ -43,7 +35,6 @@ const int denledXanhLaCay1 = 3;
 const int quangTro = A5;  // Quang trở cảm biến ánh sáng
 const int giatringuongQuangTro = 600; // gia tri nguong tu 0 ~ 1024
 
-const int cambienDHT11 = 7;  // Cảm biến nhiệt độ và độ ẩm DHT11
 const int cambienPIR= 8;  // Cảm biến chuyển động PIR
 int trangthaiPIR = LOW;
   
@@ -69,7 +60,6 @@ void setup() {
   // khai báo các cổng vào & ra trên board Arduino
   // cổng vào
   pinMode(nutBam, INPUT);  // nút bấm
-  pinMode(cambienDHT11, INPUT); // cảm biến nhiệt độ DHT11
   pinMode(cambienPIR, INPUT); // cảm biến chuyển động PIR
   
   // cổng ra
@@ -123,12 +113,6 @@ void loop() {
       analogWrite(denledDo1, 0);
       analogWrite(denledXanhLaCay1, 255);
       chedoBaoDong();
-      break;
-    case 3:
-      // đèn LED 1 hiển thị màu vàng
-      analogWrite(denledDo1, 150);
-      analogWrite(denledXanhLaCay1, 0);
-      chedocambienNhietDo();
       break;
     default:
       analogWrite(denledDo1, 255);
@@ -198,36 +182,4 @@ void chedoBaoDong() {
     analogWrite(coi, 0);
     delay(100);
   }
-}
-
-void chedocambienNhietDo() {
-  Serial.println("Che do cam bien nhiet do.");
-  
-  // thiết lập cảm biến DHT11
-  DHT.read11(cambienDHT11);
-  
-  // đọc nhiệt độ từ cảm biến
-  int nhietdo = (int)DHT.temperature;
-  Serial.print("Nhiet do: ");
-  Serial.println(nhietdo);
-  
-  if (nhietdo <= nguongXanh) {
-    // nếu nhiệt độ nhỏ hoặc bằng nguongXanh thì bật đèn xanh
-    analogWrite(denledXanhLaCay2, 0);
-    analogWrite(denledXanhNuocBien2, 255);
-    analogWrite(denledDo2, 255);
-  } else if (nhietdo > nguongXanh && nhietdo <= nguongVang) {
-     // nếu nhiệt độ lớn hơn nguongXanh và nhỏ hơn hoặc bằng nguongVang thì bật đèn vàng
-    analogWrite(denledXanhLaCay2, 0);
-    analogWrite(denledXanhNuocBien2, 255);
-    analogWrite(denledDo2, 150);
-  } else {
-    // nếu nhiệt độ lớn hơn nguongVang thì bật đèn đỏ
-    analogWrite(denledXanhLaCay2, 255);
-    analogWrite(denledXanhNuocBien2, 255);
-    analogWrite(denledDo2, 0);
-  }
-  
-  // delay 2s
-  delay(2000);
 }

@@ -1679,151 +1679,6 @@ Spark Fun Electronics SKU : Comp-Buzzer</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="DHT11">
-<packages>
-<package name="DHT11">
-<wire x1="-6.096" y1="8.0264" x2="6.0452" y2="8.0264" width="0.127" layer="21"/>
-<wire x1="6.0452" y1="8.0264" x2="6.0452" y2="-8.2296" width="0.127" layer="21"/>
-<wire x1="6.0452" y1="-8.2296" x2="-6.096" y2="-8.2296" width="0.127" layer="21"/>
-<wire x1="-6.096" y1="-8.2296" x2="-6.096" y2="8.0264" width="0.127" layer="21"/>
-<wire x1="-0.1524" y1="1.9812" x2="0.1524" y2="1.9812" width="0.127" layer="21"/>
-<wire x1="0.1524" y1="1.9812" x2="0.1524" y2="1.6764" width="0.127" layer="21"/>
-<wire x1="0.1524" y1="1.6764" x2="-0.1524" y2="1.6764" width="0.127" layer="21"/>
-<wire x1="-0.1524" y1="1.6764" x2="-0.1524" y2="1.9812" width="0.127" layer="21"/>
-<wire x1="-5.6388" y1="2.032" x2="-5.334" y2="2.032" width="0.127" layer="21"/>
-<wire x1="-5.334" y1="2.032" x2="-5.334" y2="1.7272" width="0.127" layer="21"/>
-<wire x1="-5.334" y1="1.7272" x2="-5.6388" y2="1.7272" width="0.127" layer="21"/>
-<wire x1="-5.6388" y1="1.7272" x2="-5.6388" y2="2.032" width="0.127" layer="21"/>
-<wire x1="5.334" y1="2.032" x2="5.6388" y2="2.032" width="0.127" layer="21"/>
-<wire x1="5.6388" y1="2.032" x2="5.6388" y2="1.7272" width="0.127" layer="21"/>
-<wire x1="5.6388" y1="1.7272" x2="5.334" y2="1.7272" width="0.127" layer="21"/>
-<wire x1="5.334" y1="1.7272" x2="5.334" y2="2.032" width="0.127" layer="21"/>
-<wire x1="-2.8956" y1="2.032" x2="-2.5908" y2="2.032" width="0.127" layer="21"/>
-<wire x1="-2.5908" y1="2.032" x2="-2.5908" y2="1.7272" width="0.127" layer="21"/>
-<wire x1="-2.5908" y1="1.7272" x2="-2.8956" y2="1.7272" width="0.127" layer="21"/>
-<wire x1="-2.8956" y1="1.7272" x2="-2.8956" y2="2.032" width="0.127" layer="21"/>
-<wire x1="2.5908" y1="2.032" x2="2.8956" y2="2.032" width="0.127" layer="21"/>
-<wire x1="2.8956" y1="2.032" x2="2.8956" y2="1.7272" width="0.127" layer="21"/>
-<wire x1="2.8956" y1="1.7272" x2="2.5908" y2="1.7272" width="0.127" layer="21"/>
-<wire x1="2.5908" y1="1.7272" x2="2.5908" y2="2.032" width="0.127" layer="21"/>
-<wire x1="-0.2032" y1="-0.5588" x2="0.1016" y2="-0.5588" width="0.127" layer="21"/>
-<wire x1="0.1016" y1="-0.5588" x2="0.1016" y2="-0.8636" width="0.127" layer="21"/>
-<wire x1="0.1016" y1="-0.8636" x2="-0.2032" y2="-0.8636" width="0.127" layer="21"/>
-<wire x1="-0.2032" y1="-0.8636" x2="-0.2032" y2="-0.5588" width="0.127" layer="21"/>
-<wire x1="-5.6896" y1="-0.508" x2="-5.3848" y2="-0.508" width="0.127" layer="21"/>
-<wire x1="-5.3848" y1="-0.508" x2="-5.3848" y2="-0.8128" width="0.127" layer="21"/>
-<wire x1="-5.3848" y1="-0.8128" x2="-5.6896" y2="-0.8128" width="0.127" layer="21"/>
-<wire x1="-5.6896" y1="-0.8128" x2="-5.6896" y2="-0.508" width="0.127" layer="21"/>
-<wire x1="5.2832" y1="-0.508" x2="5.588" y2="-0.508" width="0.127" layer="21"/>
-<wire x1="5.588" y1="-0.508" x2="5.588" y2="-0.8128" width="0.127" layer="21"/>
-<wire x1="5.588" y1="-0.8128" x2="5.2832" y2="-0.8128" width="0.127" layer="21"/>
-<wire x1="5.2832" y1="-0.8128" x2="5.2832" y2="-0.508" width="0.127" layer="21"/>
-<wire x1="-2.9464" y1="-0.508" x2="-2.6416" y2="-0.508" width="0.127" layer="21"/>
-<wire x1="-2.6416" y1="-0.508" x2="-2.6416" y2="-0.8128" width="0.127" layer="21"/>
-<wire x1="-2.6416" y1="-0.8128" x2="-2.9464" y2="-0.8128" width="0.127" layer="21"/>
-<wire x1="-2.9464" y1="-0.8128" x2="-2.9464" y2="-0.508" width="0.127" layer="21"/>
-<wire x1="2.54" y1="-0.508" x2="2.8448" y2="-0.508" width="0.127" layer="21"/>
-<wire x1="2.8448" y1="-0.508" x2="2.8448" y2="-0.8128" width="0.127" layer="21"/>
-<wire x1="2.8448" y1="-0.8128" x2="2.54" y2="-0.8128" width="0.127" layer="21"/>
-<wire x1="2.54" y1="-0.8128" x2="2.54" y2="-0.508" width="0.127" layer="21"/>
-<wire x1="-0.1524" y1="7.366" x2="0.1524" y2="7.366" width="0.127" layer="21"/>
-<wire x1="0.1524" y1="7.366" x2="0.1524" y2="7.0612" width="0.127" layer="21"/>
-<wire x1="0.1524" y1="7.0612" x2="-0.1524" y2="7.0612" width="0.127" layer="21"/>
-<wire x1="-0.1524" y1="7.0612" x2="-0.1524" y2="7.366" width="0.127" layer="21"/>
-<wire x1="-2.8956" y1="7.4168" x2="-2.5908" y2="7.4168" width="0.127" layer="21"/>
-<wire x1="-2.5908" y1="7.4168" x2="-2.5908" y2="7.112" width="0.127" layer="21"/>
-<wire x1="-2.5908" y1="7.112" x2="-2.8956" y2="7.112" width="0.127" layer="21"/>
-<wire x1="-2.8956" y1="7.112" x2="-2.8956" y2="7.4168" width="0.127" layer="21"/>
-<wire x1="2.5908" y1="7.4168" x2="2.8956" y2="7.4168" width="0.127" layer="21"/>
-<wire x1="2.8956" y1="7.4168" x2="2.8956" y2="7.112" width="0.127" layer="21"/>
-<wire x1="2.8956" y1="7.112" x2="2.5908" y2="7.112" width="0.127" layer="21"/>
-<wire x1="2.5908" y1="7.112" x2="2.5908" y2="7.4168" width="0.127" layer="21"/>
-<wire x1="-0.2032" y1="4.826" x2="0.1016" y2="4.826" width="0.127" layer="21"/>
-<wire x1="0.1016" y1="4.826" x2="0.1016" y2="4.5212" width="0.127" layer="21"/>
-<wire x1="0.1016" y1="4.5212" x2="-0.2032" y2="4.5212" width="0.127" layer="21"/>
-<wire x1="-0.2032" y1="4.5212" x2="-0.2032" y2="4.826" width="0.127" layer="21"/>
-<wire x1="-2.9464" y1="4.8768" x2="-2.6416" y2="4.8768" width="0.127" layer="21"/>
-<wire x1="-2.6416" y1="4.8768" x2="-2.6416" y2="4.572" width="0.127" layer="21"/>
-<wire x1="-2.6416" y1="4.572" x2="-2.9464" y2="4.572" width="0.127" layer="21"/>
-<wire x1="-2.9464" y1="4.572" x2="-2.9464" y2="4.8768" width="0.127" layer="21"/>
-<wire x1="2.54" y1="4.8768" x2="2.8448" y2="4.8768" width="0.127" layer="21"/>
-<wire x1="2.8448" y1="4.8768" x2="2.8448" y2="4.572" width="0.127" layer="21"/>
-<wire x1="2.8448" y1="4.572" x2="2.54" y2="4.572" width="0.127" layer="21"/>
-<wire x1="2.54" y1="4.572" x2="2.54" y2="4.8768" width="0.127" layer="21"/>
-<wire x1="-0.2032" y1="-3.302" x2="0.1016" y2="-3.302" width="0.127" layer="21"/>
-<wire x1="0.1016" y1="-3.302" x2="0.1016" y2="-3.6068" width="0.127" layer="21"/>
-<wire x1="0.1016" y1="-3.6068" x2="-0.2032" y2="-3.6068" width="0.127" layer="21"/>
-<wire x1="-0.2032" y1="-3.6068" x2="-0.2032" y2="-3.302" width="0.127" layer="21"/>
-<wire x1="-2.9464" y1="-3.2512" x2="-2.6416" y2="-3.2512" width="0.127" layer="21"/>
-<wire x1="-2.6416" y1="-3.2512" x2="-2.6416" y2="-3.556" width="0.127" layer="21"/>
-<wire x1="-2.6416" y1="-3.556" x2="-2.9464" y2="-3.556" width="0.127" layer="21"/>
-<wire x1="-2.9464" y1="-3.556" x2="-2.9464" y2="-3.2512" width="0.127" layer="21"/>
-<wire x1="2.54" y1="-3.2512" x2="2.8448" y2="-3.2512" width="0.127" layer="21"/>
-<wire x1="2.8448" y1="-3.2512" x2="2.8448" y2="-3.556" width="0.127" layer="21"/>
-<wire x1="2.8448" y1="-3.556" x2="2.54" y2="-3.556" width="0.127" layer="21"/>
-<wire x1="2.54" y1="-3.556" x2="2.54" y2="-3.2512" width="0.127" layer="21"/>
-<wire x1="-0.2032" y1="-5.9944" x2="0.1016" y2="-5.9944" width="0.127" layer="21"/>
-<wire x1="0.1016" y1="-5.9944" x2="0.1016" y2="-6.2992" width="0.127" layer="21"/>
-<wire x1="0.1016" y1="-6.2992" x2="-0.2032" y2="-6.2992" width="0.127" layer="21"/>
-<wire x1="-0.2032" y1="-6.2992" x2="-0.2032" y2="-5.9944" width="0.127" layer="21"/>
-<wire x1="-5.6896" y1="-5.9436" x2="-5.3848" y2="-5.9436" width="0.127" layer="21"/>
-<wire x1="-5.3848" y1="-5.9436" x2="-5.3848" y2="-6.2484" width="0.127" layer="21"/>
-<wire x1="-5.3848" y1="-6.2484" x2="-5.6896" y2="-6.2484" width="0.127" layer="21"/>
-<wire x1="-5.6896" y1="-6.2484" x2="-5.6896" y2="-5.9436" width="0.127" layer="21"/>
-<wire x1="5.2832" y1="-5.9436" x2="5.588" y2="-5.9436" width="0.127" layer="21"/>
-<wire x1="5.588" y1="-5.9436" x2="5.588" y2="-6.2484" width="0.127" layer="21"/>
-<wire x1="5.588" y1="-6.2484" x2="5.2832" y2="-6.2484" width="0.127" layer="21"/>
-<wire x1="5.2832" y1="-6.2484" x2="5.2832" y2="-5.9436" width="0.127" layer="21"/>
-<wire x1="-2.9464" y1="-5.9436" x2="-2.6416" y2="-5.9436" width="0.127" layer="21"/>
-<wire x1="-2.6416" y1="-5.9436" x2="-2.6416" y2="-6.2484" width="0.127" layer="21"/>
-<wire x1="-2.6416" y1="-6.2484" x2="-2.9464" y2="-6.2484" width="0.127" layer="21"/>
-<wire x1="-2.9464" y1="-6.2484" x2="-2.9464" y2="-5.9436" width="0.127" layer="21"/>
-<wire x1="2.54" y1="-5.9436" x2="2.8448" y2="-5.9436" width="0.127" layer="21"/>
-<wire x1="2.8448" y1="-5.9436" x2="2.8448" y2="-6.2484" width="0.127" layer="21"/>
-<wire x1="2.8448" y1="-6.2484" x2="2.54" y2="-6.2484" width="0.127" layer="21"/>
-<wire x1="2.54" y1="-6.2484" x2="2.54" y2="-5.9436" width="0.127" layer="21"/>
-<text x="-2.5908" y="5.334" size="1.27" layer="25">DHT11</text>
-<pad name="VCC" x="-3.81" y="-11.43" drill="0.8" diameter="2.1844" shape="square"/>
-<pad name="DATA" x="-1.27" y="-11.43" drill="0.8" diameter="2.1844" shape="square"/>
-<pad name="NO" x="1.27" y="-11.43" drill="0.8" diameter="2.1844" shape="square"/>
-<pad name="GND" x="3.81" y="-11.43" drill="0.8" diameter="2.1844" shape="square"/>
-</package>
-</packages>
-<symbols>
-<symbol name="DHT11">
-<wire x1="-5.08" y1="7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
-<wire x1="7.62" y1="7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="7.62" y1="-7.62" x2="-5.08" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="-7.62" x2="-5.08" y2="7.62" width="0.254" layer="94"/>
-<text x="-2.286" y="5.08" size="1.778" layer="95">DHT11</text>
-<pin name="VCC" x="-2.54" y="-12.7" length="middle" rot="R90"/>
-<pin name="DATA" x="0" y="-12.7" length="middle" rot="R90"/>
-<pin name="NO" x="2.54" y="-12.7" length="middle" rot="R90"/>
-<pin name="GND" x="5.08" y="-12.7" length="middle" rot="R90"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="DHT11" uservalue="yes">
-<description>DHT11 Czujnik temperatury i wilgotności</description>
-<gates>
-<gate name="G$1" symbol="DHT11" x="-0.762" y="0.254"/>
-</gates>
-<devices>
-<device name="" package="DHT11">
-<connects>
-<connect gate="G$1" pin="DATA" pad="DATA"/>
-<connect gate="G$1" pin="GND" pad="GND"/>
-<connect gate="G$1" pin="NO" pad="NO"/>
-<connect gate="G$1" pin="VCC" pad="VCC"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1846,18 +1701,17 @@ Spark Fun Electronics SKU : Comp-Buzzer</description>
 <part name="SUPPLY3" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="R3" library="SparkFun-Passives" deviceset="RESISTOR" device="0402-RES" value="10K"/>
 <part name="SUPPLY4" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
-<part name="GND4" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND5" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="LED2" library="adafruit" deviceset="RGBLED_CA" device="-5MM"/>
-<part name="R5" library="SparkFun-Passives" deviceset="RESISTOR" device="0402-RES" value="220"/>
 <part name="SG1" library="SparkFun-Electromechanical" deviceset="BUZZER" device="NS"/>
 <part name="GND6" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY5" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="LED3" library="adafruit" deviceset="RGBLED_CA" device="-5MM"/>
+<part name="R2" library="SparkFun-Passives" deviceset="RESISTOR" device="0402-RES" value="220"/>
+<part name="R5" library="SparkFun-Passives" deviceset="RESISTOR" device="0402-RES" value="220"/>
 <part name="R6" library="SparkFun-Passives" deviceset="RESISTOR" device="0402-RES" value="220"/>
-<part name="U$1" library="DHT11" deviceset="DHT11" device=""/>
-<part name="SUPPLY6" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
-<part name="R7" library="SparkFun-Passives" deviceset="RESISTOR" device="0402-RES" value="10K"/>
+<part name="R7" library="SparkFun-Passives" deviceset="RESISTOR" device="0402-RES" value="220"/>
+<part name="R8" library="SparkFun-Passives" deviceset="RESISTOR" device="0402-RES" value="220"/>
 </parts>
 <sheets>
 <sheet>
@@ -1867,28 +1721,27 @@ Spark Fun Electronics SKU : Comp-Buzzer</description>
 <instance part="U1" gate="G$1" x="78.74" y="78.74"/>
 <instance part="SUPPLY1" gate="G$1" x="76.2" y="43.18" rot="R180"/>
 <instance part="GND1" gate="1" x="81.28" y="40.64"/>
-<instance part="R1" gate="G$1" x="134.62" y="76.2"/>
-<instance part="GND3" gate="1" x="124.46" y="71.12"/>
-<instance part="SUPPLY2" gate="G$1" x="160.02" y="81.28"/>
+<instance part="R1" gate="G$1" x="127" y="60.96"/>
+<instance part="GND3" gate="1" x="116.84" y="55.88"/>
+<instance part="SUPPLY2" gate="G$1" x="152.4" y="66.04"/>
 <instance part="FRAME1" gate="G$1" x="-33.02" y="-15.24"/>
 <instance part="FRAME1" gate="V" x="114.3" y="-15.24"/>
-<instance part="R4" gate="G$1" x="152.4" y="76.2"/>
-<instance part="S1" gate="1" x="147.32" y="96.52" rot="MR270"/>
-<instance part="SUPPLY3" gate="G$1" x="160.02" y="121.92"/>
-<instance part="R3" gate="G$1" x="132.08" y="93.98"/>
-<instance part="SUPPLY4" gate="G$1" x="121.92" y="96.52"/>
-<instance part="GND4" gate="1" x="144.78" y="35.56"/>
-<instance part="GND5" gate="1" x="154.94" y="88.9"/>
-<instance part="LED2" gate="G$1" x="134.62" y="114.3" rot="R180"/>
-<instance part="R5" gate="G$1" x="152.4" y="114.3"/>
+<instance part="R4" gate="G$1" x="144.78" y="60.96"/>
+<instance part="S1" gate="1" x="142.24" y="83.82" rot="MR270"/>
+<instance part="SUPPLY3" gate="G$1" x="154.94" y="111.76"/>
+<instance part="R3" gate="G$1" x="127" y="81.28"/>
+<instance part="SUPPLY4" gate="G$1" x="116.84" y="83.82"/>
+<instance part="GND5" gate="1" x="149.86" y="76.2"/>
+<instance part="LED2" gate="G$1" x="139.7" y="104.14" rot="R180"/>
 <instance part="SG1" gate="G$1" x="7.62" y="93.98"/>
 <instance part="GND6" gate="1" x="2.54" y="86.36"/>
 <instance part="SUPPLY5" gate="G$1" x="33.02" y="68.58"/>
-<instance part="LED3" gate="G$1" x="7.62" y="60.96" rot="R180"/>
-<instance part="R6" gate="G$1" x="25.4" y="60.96"/>
-<instance part="U$1" gate="G$1" x="139.7" y="55.88"/>
-<instance part="SUPPLY6" gate="G$1" x="121.92" y="45.72"/>
-<instance part="R7" gate="G$1" x="129.54" y="35.56"/>
+<instance part="LED3" gate="G$1" x="22.86" y="60.96" rot="R180"/>
+<instance part="R2" gate="G$1" x="-5.08" y="66.04"/>
+<instance part="R5" gate="G$1" x="7.62" y="55.88"/>
+<instance part="R6" gate="G$1" x="2.54" y="60.96"/>
+<instance part="R7" gate="G$1" x="124.46" y="109.22"/>
+<instance part="R8" gate="G$1" x="124.46" y="99.06"/>
 </instances>
 <busses>
 </busses>
@@ -1902,36 +1755,24 @@ Spark Fun Electronics SKU : Comp-Buzzer</description>
 <segment>
 <pinref part="R4" gate="G$1" pin="P$2"/>
 <pinref part="SUPPLY2" gate="G$1" pin="VCC"/>
-<wire x1="160.02" y1="76.2" x2="160.02" y2="81.28" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="SUPPLY3" gate="G$1" pin="VCC"/>
-<wire x1="160.02" y1="121.92" x2="160.02" y2="114.3" width="0.1524" layer="91"/>
-<pinref part="R5" gate="G$1" pin="2"/>
-<wire x1="160.02" y1="114.3" x2="157.48" y2="114.3" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="SUPPLY5" gate="G$1" pin="VCC"/>
-<wire x1="33.02" y1="68.58" x2="33.02" y2="60.96" width="0.1524" layer="91"/>
-<pinref part="R6" gate="G$1" pin="2"/>
-<wire x1="33.02" y1="60.96" x2="30.48" y2="60.96" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="U$1" gate="G$1" pin="VCC"/>
-<wire x1="137.16" y1="43.18" x2="137.16" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="137.16" y1="40.64" x2="121.92" y2="40.64" width="0.1524" layer="91"/>
-<pinref part="SUPPLY6" gate="G$1" pin="VCC"/>
-<wire x1="121.92" y1="40.64" x2="121.92" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="121.92" y1="40.64" x2="121.92" y2="35.56" width="0.1524" layer="91"/>
-<junction x="121.92" y="40.64"/>
-<pinref part="R7" gate="G$1" pin="1"/>
-<wire x1="121.92" y1="35.56" x2="124.46" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="60.96" x2="152.4" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SUPPLY4" gate="G$1" pin="VCC"/>
-<wire x1="121.92" y1="96.52" x2="121.92" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="83.82" x2="116.84" y2="81.28" width="0.1524" layer="91"/>
 <pinref part="R3" gate="G$1" pin="1"/>
-<wire x1="121.92" y1="93.98" x2="127" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="81.28" x2="121.92" y2="81.28" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="SUPPLY5" gate="G$1" pin="VCC"/>
+<pinref part="LED3" gate="G$1" pin="VCC"/>
+<wire x1="33.02" y1="68.58" x2="33.02" y2="60.96" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="LED2" gate="G$1" pin="VCC"/>
+<pinref part="SUPPLY3" gate="G$1" pin="VCC"/>
+<wire x1="149.86" y1="104.14" x2="154.94" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="154.94" y1="104.14" x2="154.94" y2="111.76" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -1942,14 +1783,9 @@ Spark Fun Electronics SKU : Comp-Buzzer</description>
 </segment>
 <segment>
 <pinref part="GND3" gate="1" pin="GND"/>
-<wire x1="124.46" y1="73.66" x2="124.46" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="58.42" x2="116.84" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="R1" gate="G$1" pin="1"/>
-<wire x1="124.46" y1="76.2" x2="129.54" y2="76.2" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="U$1" gate="G$1" pin="GND"/>
-<pinref part="GND4" gate="1" pin="GND"/>
-<wire x1="144.78" y1="43.18" x2="144.78" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="60.96" x2="121.92" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SG1" gate="G$1" pin="1"/>
@@ -1959,9 +1795,9 @@ Spark Fun Electronics SKU : Comp-Buzzer</description>
 </segment>
 <segment>
 <pinref part="GND5" gate="1" pin="GND"/>
-<wire x1="154.94" y1="91.44" x2="154.94" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="78.74" x2="149.86" y2="81.28" width="0.1524" layer="91"/>
 <pinref part="S1" gate="1" pin="P1"/>
-<wire x1="154.94" y1="93.98" x2="152.4" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="81.28" x2="147.32" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="A5" class="0">
@@ -1973,25 +1809,11 @@ Spark Fun Electronics SKU : Comp-Buzzer</description>
 <segment>
 <pinref part="R4" gate="G$1" pin="P$1"/>
 <pinref part="R1" gate="G$1" pin="2"/>
-<wire x1="144.78" y1="76.2" x2="142.24" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="142.24" y1="76.2" x2="139.7" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="142.24" y1="76.2" x2="142.24" y2="83.82" width="0.1524" layer="91"/>
-<junction x="142.24" y="76.2"/>
-<label x="142.24" y="83.82" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$4" class="0">
-<segment>
-<pinref part="R5" gate="G$1" pin="1"/>
-<pinref part="LED2" gate="G$1" pin="VCC"/>
-<wire x1="147.32" y1="114.3" x2="144.78" y2="114.3" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$5" class="0">
-<segment>
-<pinref part="R6" gate="G$1" pin="1"/>
-<pinref part="LED3" gate="G$1" pin="VCC"/>
-<wire x1="20.32" y1="60.96" x2="17.78" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="60.96" x2="134.62" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="60.96" x2="132.08" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="60.96" x2="134.62" y2="68.58" width="0.1524" layer="91"/>
+<junction x="134.62" y="60.96"/>
+<label x="134.62" y="68.58" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="D2" class="0">
@@ -2003,11 +1825,11 @@ Spark Fun Electronics SKU : Comp-Buzzer</description>
 <segment>
 <pinref part="S1" gate="1" pin="S1"/>
 <pinref part="R3" gate="G$1" pin="2"/>
-<wire x1="142.24" y1="93.98" x2="139.7" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="139.7" y1="93.98" x2="137.16" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="139.7" y1="93.98" x2="139.7" y2="99.06" width="0.1524" layer="91"/>
-<junction x="139.7" y="93.98"/>
-<label x="139.7" y="99.06" size="1.778" layer="95"/>
+<wire x1="137.16" y1="81.28" x2="134.62" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="81.28" x2="132.08" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="81.28" x2="134.62" y2="86.36" width="0.1524" layer="91"/>
+<junction x="134.62" y="81.28"/>
+<label x="134.62" y="86.36" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="D3" class="0">
@@ -2017,9 +1839,9 @@ Spark Fun Electronics SKU : Comp-Buzzer</description>
 <label x="91.44" y="119.38" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="LED2" gate="G$1" pin="GREEN"/>
-<wire x1="127" y1="114.3" x2="119.38" y2="114.3" width="0.1524" layer="91"/>
-<label x="119.38" y="114.3" size="1.778" layer="95"/>
+<pinref part="R8" gate="G$1" pin="1"/>
+<wire x1="119.38" y1="99.06" x2="111.76" y2="99.06" width="0.1524" layer="91"/>
+<label x="111.76" y="99.06" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="D5" class="0">
@@ -2029,9 +1851,9 @@ Spark Fun Electronics SKU : Comp-Buzzer</description>
 <label x="86.36" y="116.84" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="LED2" gate="G$1" pin="RED"/>
-<wire x1="127" y1="119.38" x2="119.38" y2="119.38" width="0.1524" layer="91"/>
-<label x="119.38" y="119.38" size="1.778" layer="95"/>
+<pinref part="R7" gate="G$1" pin="1"/>
+<wire x1="119.38" y1="109.22" x2="111.76" y2="109.22" width="0.1524" layer="91"/>
+<label x="111.76" y="109.22" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="D6" class="0">
@@ -2046,23 +1868,6 @@ Spark Fun Electronics SKU : Comp-Buzzer</description>
 <label x="20.32" y="91.44" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="D7" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="D7"/>
-<wire x1="81.28" y1="109.22" x2="81.28" y2="121.92" width="0.1524" layer="91"/>
-<label x="81.28" y="121.92" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="R7" gate="G$1" pin="2"/>
-<pinref part="U$1" gate="G$1" pin="DATA"/>
-<wire x1="134.62" y1="35.56" x2="139.7" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="139.7" y1="35.56" x2="139.7" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="139.7" y1="35.56" x2="139.7" y2="27.94" width="0.1524" layer="91"/>
-<junction x="139.7" y="35.56"/>
-<wire x1="139.7" y1="27.94" x2="121.92" y2="27.94" width="0.1524" layer="91"/>
-<label x="121.92" y="27.94" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="D9" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="D9"/>
@@ -2070,9 +1875,9 @@ Spark Fun Electronics SKU : Comp-Buzzer</description>
 <label x="73.66" y="116.84" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="LED3" gate="G$1" pin="BLUE"/>
-<wire x1="0" y1="55.88" x2="-7.62" y2="55.88" width="0.1524" layer="91"/>
-<label x="-7.62" y="55.88" size="1.778" layer="95"/>
+<pinref part="R5" gate="G$1" pin="1"/>
+<wire x1="2.54" y1="55.88" x2="-15.24" y2="55.88" width="0.1524" layer="91"/>
+<label x="-15.24" y="55.88" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="D10" class="0">
@@ -2082,9 +1887,9 @@ Spark Fun Electronics SKU : Comp-Buzzer</description>
 <label x="71.12" y="119.38" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="LED3" gate="G$1" pin="GREEN"/>
-<wire x1="0" y1="60.96" x2="-7.62" y2="60.96" width="0.1524" layer="91"/>
-<label x="-7.62" y="60.96" size="1.778" layer="95"/>
+<pinref part="R6" gate="G$1" pin="1"/>
+<wire x1="-2.54" y1="60.96" x2="-15.24" y2="60.96" width="0.1524" layer="91"/>
+<label x="-15.24" y="60.96" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="D11" class="0">
@@ -2094,9 +1899,43 @@ Spark Fun Electronics SKU : Comp-Buzzer</description>
 <label x="68.58" y="121.92" size="1.778" layer="95"/>
 </segment>
 <segment>
+<pinref part="R2" gate="G$1" pin="1"/>
+<wire x1="-10.16" y1="66.04" x2="-15.24" y2="66.04" width="0.1524" layer="91"/>
+<label x="-15.24" y="66.04" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="R2" gate="G$1" pin="2"/>
 <pinref part="LED3" gate="G$1" pin="RED"/>
-<wire x1="0" y1="66.04" x2="-7.62" y2="66.04" width="0.1524" layer="91"/>
-<label x="-7.62" y="66.04" size="1.778" layer="95"/>
+<wire x1="0" y1="66.04" x2="15.24" y2="66.04" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="R6" gate="G$1" pin="2"/>
+<pinref part="LED3" gate="G$1" pin="GREEN"/>
+<wire x1="7.62" y1="60.96" x2="15.24" y2="60.96" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
+<pinref part="R5" gate="G$1" pin="2"/>
+<wire x1="12.7" y1="55.88" x2="17.78" y2="55.88" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$4" class="0">
+<segment>
+<pinref part="LED2" gate="G$1" pin="RED"/>
+<pinref part="R7" gate="G$1" pin="2"/>
+<wire x1="132.08" y1="109.22" x2="129.54" y2="109.22" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$5" class="0">
+<segment>
+<pinref part="LED2" gate="G$1" pin="BLUE"/>
+<pinref part="R8" gate="G$1" pin="2"/>
+<wire x1="132.08" y1="99.06" x2="129.54" y2="99.06" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
