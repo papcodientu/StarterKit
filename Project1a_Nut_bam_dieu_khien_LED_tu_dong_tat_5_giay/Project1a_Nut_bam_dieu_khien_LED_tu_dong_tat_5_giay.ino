@@ -58,18 +58,19 @@ void loop() {
       if (trangthaiNutBam == LOW) {
         // thay doi trang thai den LED
         trangthaidenLED = HIGH;
+        
+        // xuat gia trang thai den LED
+        digitalWrite(denLED, trangthaidenLED);
+      
+        // delay 5s, 1000ms = 1s
+        delay(5000);
       }
     }
   }
-    
-  // xuat gia trang thai den LED
-  digitalWrite(denLED, trangthaidenLED);
-
-  // delay 5s, 1000ms = 1s
-  delay(5000);
   
   // tat den
-  trangthaidenLED = LOW:
+  trangthaidenLED = LOW;
+  digitalWrite(denLED, trangthaidenLED);
   
   // ghi lai gia tri nut bam
   trangthainutbamTruoc = giatriNutBam;

@@ -13,7 +13,7 @@ Cách lắp mạch:
 Tác giả: Nhân Nguyễn
 Ngày: 06/09/2014
 Lịch sử thay đổi
-- 11/03/2015 Rev. 1.1 Added delay time 10 seconds
+- 11/03/2015 Rev. 1.1 Added delay time 5 seconds
 - 04/11/2014 Rev. 1.0 Added button debounce
 - 06/09/2014 Rev. 0.1 Draft, no button debounce
 Website: http://papcodientu.com/
@@ -58,18 +58,19 @@ void loop() {
       if (trangthaiNutBam == LOW) {
         // thay doi trang thai den LED
         trangthaidenLED = HIGH;
+        
+        // xuat gia trang thai den LED
+        digitalWrite(denLED, trangthaidenLED);
+      
+        // delay 5s, 1000ms = 1s
+        delay(10000);
       }
     }
   }
-    
-  // xuat gia trang thai den LED
-  digitalWrite(denLED, trangthaidenLED);
-
-  // delay 10s thay vi 5s, 1000ms = 1s
-  delay(10000);
   
   // tat den
-  trangthaidenLED = LOW:
+  trangthaidenLED = LOW;
+  digitalWrite(denLED, trangthaidenLED);
   
   // ghi lai gia tri nut bam
   trangthainutbamTruoc = giatriNutBam;
