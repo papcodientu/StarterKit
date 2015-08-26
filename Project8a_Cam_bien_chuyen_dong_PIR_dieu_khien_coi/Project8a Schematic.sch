@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="7.3.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -955,7 +955,7 @@ Spark Fun Electronics SKU : Comp-Buzzer</description>
 <part name="GND3" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY2" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="FRAME1" library="SparkFun-Aesthetics" deviceset="FRAME-LETTER" device=""/>
-<part name="U$1" library="diy-modules" deviceset="MOTION-PIR-DYP-ME003" device=""/>
+<part name="U2" library="diy-modules" deviceset="MOTION-PIR-DYP-ME003" device=""/>
 <part name="SG1" library="SparkFun-Electromechanical" deviceset="BUZZER" device="PTH-KIT"/>
 </parts>
 <sheets>
@@ -971,7 +971,7 @@ Spark Fun Electronics SKU : Comp-Buzzer</description>
 <instance part="SUPPLY2" gate="G$1" x="121.92" y="121.92"/>
 <instance part="FRAME1" gate="G$1" x="-33.02" y="-15.24"/>
 <instance part="FRAME1" gate="V" x="114.3" y="-15.24"/>
-<instance part="U$1" gate="G$1" x="104.14" y="139.7"/>
+<instance part="U2" gate="G$1" x="104.14" y="139.7"/>
 <instance part="SG1" gate="G$1" x="63.5" y="121.92"/>
 </instances>
 <busses>
@@ -984,7 +984,7 @@ Spark Fun Electronics SKU : Comp-Buzzer</description>
 <wire x1="76.2" y1="48.26" x2="76.2" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="VCC"/>
+<pinref part="U2" gate="G$1" pin="VCC"/>
 <pinref part="SUPPLY2" gate="G$1" pin="VCC"/>
 <wire x1="106.68" y1="119.38" x2="121.92" y2="119.38" width="0.1524" layer="91"/>
 <wire x1="121.92" y1="119.38" x2="121.92" y2="121.92" width="0.1524" layer="91"/>
@@ -998,7 +998,7 @@ Spark Fun Electronics SKU : Comp-Buzzer</description>
 </segment>
 <segment>
 <pinref part="GND3" gate="1" pin="GND"/>
-<pinref part="U$1" gate="G$1" pin="GND"/>
+<pinref part="U2" gate="G$1" pin="GND"/>
 <wire x1="88.9" y1="116.84" x2="101.6" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="101.6" y1="116.84" x2="101.6" y2="119.38" width="0.1524" layer="91"/>
 </segment>
@@ -1011,7 +1011,7 @@ Spark Fun Electronics SKU : Comp-Buzzer</description>
 </net>
 <net name="N$3" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="OUT"/>
+<pinref part="U2" gate="G$1" pin="OUT"/>
 <wire x1="104.14" y1="119.38" x2="104.14" y2="111.76" width="0.1524" layer="91"/>
 <wire x1="104.14" y1="111.76" x2="93.98" y2="111.76" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="D2"/>

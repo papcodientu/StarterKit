@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="7.3.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="dots" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -2527,11 +2527,11 @@ For COM-09806 in the SparkFun catalog&lt;br&gt;</description>
 <instance part="R2" gate="G$1" x="50.8" y="119.38"/>
 <instance part="LED1" gate="G$1" x="38.1" y="119.38" rot="R270"/>
 <instance part="GND2" gate="1" x="27.94" y="109.22"/>
-<instance part="GND3" gate="1" x="88.9" y="114.3"/>
-<instance part="SUPPLY2" gate="G$1" x="119.38" y="124.46"/>
+<instance part="GND3" gate="1" x="88.9" y="30.48"/>
+<instance part="SUPPLY2" gate="G$1" x="119.38" y="40.64"/>
 <instance part="FRAME1" gate="G$1" x="-33.02" y="-15.24"/>
 <instance part="FRAME1" gate="V" x="114.3" y="-15.24"/>
-<instance part="R1" gate="R?" x="106.68" y="119.38"/>
+<instance part="R1" gate="R?" x="106.68" y="35.56"/>
 </instances>
 <busses>
 </busses>
@@ -2544,9 +2544,9 @@ For COM-09806 in the SparkFun catalog&lt;br&gt;</description>
 </segment>
 <segment>
 <pinref part="R1" gate="R?" pin="CW"/>
-<wire x1="111.76" y1="119.38" x2="119.38" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="35.56" x2="119.38" y2="35.56" width="0.1524" layer="91"/>
 <pinref part="SUPPLY2" gate="G$1" pin="VCC"/>
-<wire x1="119.38" y1="119.38" x2="119.38" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="35.56" x2="119.38" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -2563,9 +2563,9 @@ For COM-09806 in the SparkFun catalog&lt;br&gt;</description>
 </segment>
 <segment>
 <pinref part="GND3" gate="1" pin="GND"/>
-<wire x1="88.9" y1="116.84" x2="88.9" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="33.02" x2="88.9" y2="35.56" width="0.1524" layer="91"/>
 <pinref part="R1" gate="R?" pin="CCW"/>
-<wire x1="88.9" y1="119.38" x2="101.6" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="35.56" x2="101.6" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -2575,24 +2575,21 @@ For COM-09806 in the SparkFun catalog&lt;br&gt;</description>
 <wire x1="45.72" y1="119.38" x2="40.64" y2="119.38" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="A0" class="0">
-<segment>
-<pinref part="R1" gate="R?" pin="WIPER"/>
-<wire x1="106.68" y1="124.46" x2="106.68" y2="129.54" width="0.1524" layer="91"/>
-<label x="106.68" y="129.54" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="U1" gate="G$1" pin="A0"/>
-<wire x1="88.9" y1="48.26" x2="88.9" y2="43.18" width="0.1524" layer="91"/>
-<label x="88.9" y="43.18" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="N$1" class="0">
 <segment>
 <pinref part="R2" gate="G$1" pin="2"/>
 <wire x1="55.88" y1="119.38" x2="68.58" y2="119.38" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="D11"/>
 <wire x1="68.58" y1="119.38" x2="68.58" y2="109.22" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="A0"/>
+<wire x1="88.9" y1="48.26" x2="88.9" y2="43.18" width="0.1524" layer="91"/>
+<pinref part="R1" gate="R?" pin="WIPER"/>
+<wire x1="88.9" y1="43.18" x2="106.68" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="43.18" x2="106.68" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

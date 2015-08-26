@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="7.3.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -2327,19 +2327,19 @@ Through-hole photocell (http://www.sparkfun.com/products/9088)&lt;br&gt;
 <instance part="U1" gate="G$1" x="78.74" y="78.74"/>
 <instance part="SUPPLY1" gate="G$1" x="76.2" y="43.18" rot="R180"/>
 <instance part="GND1" gate="1" x="81.28" y="40.64"/>
-<instance part="R8" gate="G$1" x="116.84" y="116.84" rot="R90"/>
+<instance part="R8" gate="G$1" x="93.98" y="30.48" rot="MR0"/>
 <instance part="R1" gate="G$1" x="50.8" y="114.3"/>
 <instance part="LED1" gate="G$1" x="38.1" y="114.3" rot="R270"/>
 <instance part="GND2" gate="1" x="27.94" y="109.22"/>
-<instance part="GND3" gate="1" x="116.84" y="106.68"/>
-<instance part="SUPPLY2" gate="G$1" x="91.44" y="134.62"/>
+<instance part="GND3" gate="1" x="114.3" y="27.94" rot="MR0"/>
+<instance part="SUPPLY2" gate="G$1" x="114.3" y="45.72" rot="MR0"/>
 <instance part="FRAME1" gate="G$1" x="-33.02" y="-15.24"/>
 <instance part="FRAME1" gate="V" x="114.3" y="-15.24"/>
 <instance part="LED2" gate="G$1" x="38.1" y="121.92" rot="R270"/>
 <instance part="LED3" gate="G$1" x="38.1" y="129.54" rot="R270"/>
 <instance part="R2" gate="G$1" x="50.8" y="121.92"/>
 <instance part="R3" gate="G$1" x="50.8" y="129.54"/>
-<instance part="R7" gate="G$1" x="101.6" y="129.54"/>
+<instance part="R7" gate="G$1" x="104.14" y="40.64" rot="MR0"/>
 <instance part="LED4" gate="G$1" x="38.1" y="137.16" rot="R270"/>
 <instance part="LED5" gate="G$1" x="38.1" y="144.78" rot="R270"/>
 <instance part="LED6" gate="G$1" x="38.1" y="152.4" rot="R270"/>
@@ -2358,9 +2358,9 @@ Through-hole photocell (http://www.sparkfun.com/products/9088)&lt;br&gt;
 </segment>
 <segment>
 <pinref part="SUPPLY2" gate="G$1" pin="VCC"/>
-<wire x1="91.44" y1="134.62" x2="91.44" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="45.72" x2="114.3" y2="40.64" width="0.1524" layer="91"/>
 <pinref part="R7" gate="G$1" pin="P$1"/>
-<wire x1="91.44" y1="129.54" x2="93.98" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="40.64" x2="111.76" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -2398,7 +2398,7 @@ Through-hole photocell (http://www.sparkfun.com/products/9088)&lt;br&gt;
 <segment>
 <pinref part="R8" gate="G$1" pin="1"/>
 <pinref part="GND3" gate="1" pin="GND"/>
-<wire x1="116.84" y1="111.76" x2="116.84" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="30.48" x2="114.3" y2="30.48" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -2449,17 +2449,12 @@ Through-hole photocell (http://www.sparkfun.com/products/9088)&lt;br&gt;
 <net name="A0" class="0">
 <segment>
 <pinref part="R7" gate="G$1" pin="P$2"/>
-<wire x1="109.22" y1="129.54" x2="116.84" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="40.64" x2="88.9" y2="40.64" width="0.1524" layer="91"/>
 <pinref part="R8" gate="G$1" pin="2"/>
-<wire x1="116.84" y1="129.54" x2="116.84" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="116.84" y1="129.54" x2="116.84" y2="134.62" width="0.1524" layer="91"/>
-<junction x="116.84" y="129.54"/>
-<label x="116.84" y="134.62" size="1.778" layer="95"/>
-</segment>
-<segment>
+<wire x1="88.9" y1="40.64" x2="88.9" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="A0"/>
 <wire x1="88.9" y1="48.26" x2="88.9" y2="40.64" width="0.1524" layer="91"/>
-<label x="88.9" y="40.64" size="1.778" layer="95"/>
+<junction x="88.9" y="40.64"/>
 </segment>
 </net>
 <net name="N$9" class="0">
